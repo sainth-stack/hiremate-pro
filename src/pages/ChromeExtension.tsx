@@ -998,32 +998,6 @@ function ProfileTab({ profile }: { profile: typeof mockProfile }) {
           ))}
         </div>
       </div>
-
-      {/* Links */}
-      <div className="p-4 space-y-2">
-        <div className="flex items-center gap-1.5">
-          <ExternalLink className="w-3.5 h-3.5 text-primary" />
-          <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Links</p>
-        </div>
-        <div className="space-y-1">
-          {[
-            { icon: <Linkedin className="w-3.5 h-3.5" />, label: "LinkedIn", url: profile.linkedin },
-            { icon: <Github className="w-3.5 h-3.5" />, label: "GitHub", url: profile.github },
-            { icon: <Globe className="w-3.5 h-3.5" />, label: "Portfolio", url: profile.portfolio },
-          ].map((link) => (
-            <a
-              key={link.label}
-              href="#"
-              className="flex items-center gap-2 px-2.5 py-2 rounded-lg hover:bg-muted/30 transition-colors group"
-            >
-              <span className="text-muted-foreground group-hover:text-primary transition-colors">{link.icon}</span>
-              <span className="text-xs text-foreground flex-1">{link.label}</span>
-              <span className="text-[10px] text-muted-foreground truncate max-w-[140px]">{link.url}</span>
-              <ArrowUpRight className="w-3 h-3 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-            </a>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }
