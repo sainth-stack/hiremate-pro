@@ -501,7 +501,7 @@ function AutofillTab({
                           <p className="text-xs font-semibold text-foreground leading-snug">{q.question}</p>
                         </div>
                         {q.answer ? (
-                          <div className="ml-5.5 space-y-1.5">
+                          <div className="ml-6 space-y-1.5">
                             <p className="text-xs text-muted-foreground leading-relaxed">{q.answer}</p>
                             <div className="flex items-center gap-1.5">
                               {q.generated && (
@@ -513,7 +513,7 @@ function AutofillTab({
                             </div>
                           </div>
                         ) : (
-                          <div className="ml-5.5 flex items-center gap-2">
+                          <div className="ml-6 flex items-center gap-2">
                             <Badge variant="outline" className="text-[9px] px-1.5 py-0 h-4 text-warning border-warning/30">
                               Needs Answer
                             </Badge>
