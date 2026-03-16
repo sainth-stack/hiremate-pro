@@ -12,7 +12,8 @@ const navItems = [
   { label: "Dashboard", icon: LayoutDashboard, path: "/" },
   { label: "Application Tracker", icon: Kanban, path: "/application-tracker" },
   { label: "AI Resume Studio", icon: Sparkles, path: "/ai-resume-studio" },
-  { label: "Interview practice", icon: Mic, path: "/interview-practice" },
+  { label: "Interview Practice", icon: Mic, path: "/interview-practice" },
+  { label: "Chrome Extension", icon: Chrome, path: "/chrome-extension" },
 ];
 
 export default function MobileNav() {
