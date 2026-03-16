@@ -11,11 +11,11 @@ import { Input } from "@/components/ui/input";
 import {
   Sparkles, ShieldCheck, User, CheckCircle, AlertCircle,
   FileText, PenSquare, Star, Users, ChevronDown, ChevronUp,
-  MapPin, Mail, Phone, Linkedin, Github, ExternalLink, RefreshCw, Edit,
+  MapPin, Mail, Phone, Linkedin, Github, RefreshCw, Edit,
   Briefcase, X, Chrome, Copy, Check, Zap, Eye, Download,
   GraduationCap, Code, Globe, Upload, Lock, Unlock, RotateCcw,
   Lightbulb, TrendingUp, Target, Award, Clock, Send, Wand2,
-  MessageSquare, HelpCircle, Hash, Layers, ArrowUpRight
+  MessageSquare, HelpCircle, Hash, Layers, ExternalLink
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -501,7 +501,7 @@ function AutofillTab({
                           <p className="text-xs font-semibold text-foreground leading-snug">{q.question}</p>
                         </div>
                         {q.answer ? (
-                          <div className="ml-5.5 space-y-1.5">
+                          <div className="ml-6 space-y-1.5">
                             <p className="text-xs text-muted-foreground leading-relaxed">{q.answer}</p>
                             <div className="flex items-center gap-1.5">
                               {q.generated && (
@@ -513,7 +513,7 @@ function AutofillTab({
                             </div>
                           </div>
                         ) : (
-                          <div className="ml-5.5 flex items-center gap-2">
+                          <div className="ml-6 flex items-center gap-2">
                             <Badge variant="outline" className="text-[9px] px-1.5 py-0 h-4 text-warning border-warning/30">
                               Needs Answer
                             </Badge>
@@ -995,32 +995,6 @@ function ProfileTab({ profile }: { profile: typeof mockProfile }) {
             <Badge key={l} variant="secondary" className="text-[10px] font-normal px-2 py-0.5">
               {l}
             </Badge>
-          ))}
-        </div>
-      </div>
-
-      {/* Links */}
-      <div className="p-4 space-y-2">
-        <div className="flex items-center gap-1.5">
-          <ExternalLink className="w-3.5 h-3.5 text-primary" />
-          <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Links</p>
-        </div>
-        <div className="space-y-1">
-          {[
-            { icon: <Linkedin className="w-3.5 h-3.5" />, label: "LinkedIn", url: profile.linkedin },
-            { icon: <Github className="w-3.5 h-3.5" />, label: "GitHub", url: profile.github },
-            { icon: <Globe className="w-3.5 h-3.5" />, label: "Portfolio", url: profile.portfolio },
-          ].map((link) => (
-            <a
-              key={link.label}
-              href="#"
-              className="flex items-center gap-2 px-2.5 py-2 rounded-lg hover:bg-muted/30 transition-colors group"
-            >
-              <span className="text-muted-foreground group-hover:text-primary transition-colors">{link.icon}</span>
-              <span className="text-xs text-foreground flex-1">{link.label}</span>
-              <span className="text-[10px] text-muted-foreground truncate max-w-[140px]">{link.url}</span>
-              <ArrowUpRight className="w-3 h-3 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-            </a>
           ))}
         </div>
       </div>
