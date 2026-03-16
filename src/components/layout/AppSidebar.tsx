@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import {
   LayoutDashboard, Kanban,
-  Mic, LogOut, Sparkles, ChevronLeft, ChevronRight, Briefcase
+  Mic, LogOut, Sparkles, ChevronLeft, ChevronRight, Briefcase, Chrome
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
