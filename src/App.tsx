@@ -15,6 +15,7 @@ import ResumeGenerator from "./pages/ResumeGenerator";
 import ATSScanner from "./pages/ATSScanner";
 import ResumeAnalyzer from "./pages/ResumeAnalyzer";
 import InterviewPractice from "./pages/InterviewPractice";
+import ChromeExtension from "./pages/ChromeExtension";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
