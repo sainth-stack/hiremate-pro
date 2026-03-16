@@ -10,9 +10,9 @@ import { Button } from "@/components/ui/button";
 
 const navItems = [
   { label: "Dashboard", icon: LayoutDashboard, path: "/" },
-  { label: "Applications", icon: Kanban, path: "/application-tracker" },
+  { label: "Application Tracker", icon: Kanban, path: "/application-tracker" },
   { label: "AI Resume Studio", icon: Sparkles, path: "/ai-resume-studio" },
-  { label: "Interview Prep", icon: Mic, path: "/interview-practice" },
+  { label: "Interview practice", icon: Mic, path: "/interview-practice" },
 ];
 
 export default function MobileNav() {
@@ -22,7 +22,6 @@ export default function MobileNav() {
 
   return (
     <div className="md:hidden">
-      {/* Top bar */}
       <div className="flex items-center justify-between px-4 h-14 border-b border-border bg-card sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg bg-primary flex items-center justify-center">
@@ -35,10 +34,10 @@ export default function MobileNav() {
         </Button>
       </div>
 
-      {/* Drawer */}
       {open && (
         <div className="fixed inset-0 z-40 top-14 bg-background/95 backdrop-blur-sm">
           <nav className="p-4 space-y-1">
+            <p className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider px-3 mb-2">Pages</p>
             {navItems.map((item) => {
               const active = location.pathname === item.path;
               return (
@@ -62,7 +61,7 @@ export default function MobileNav() {
                 onClick={() => { logout(); setOpen(false); }}
                 className="flex items-center gap-3 px-3 py-3 rounded-lg text-sm font-medium text-destructive hover:bg-destructive/10 w-full"
               >
-                <LogOut className="w-[18px] h-[18px]" /> Logout
+                <LogOut className="w-[18px] h-[18px]" /> Sign Out
               </button>
             </div>
           </nav>
