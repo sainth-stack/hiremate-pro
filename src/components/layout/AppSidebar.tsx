@@ -1,8 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import {
-  LayoutDashboard, User, Kanban, FileText, ScanSearch, FileBarChart,
-  Mic, CreditCard, Settings, LogOut, Sparkles, ChevronLeft, ChevronRight, Briefcase
+  LayoutDashboard, Kanban, FileText, ScanSearch, FileBarChart,
+  Mic, LogOut, Sparkles, ChevronLeft, ChevronRight, Briefcase
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
@@ -16,10 +16,6 @@ const navItems = [
   { label: "ATS Scanner", icon: ScanSearch, path: "/job-scan" },
   { label: "Resume Analyzer", icon: FileBarChart, path: "/resume-analyzer" },
   { label: "Interview Prep", icon: Mic, path: "/interview-practice" },
-  { label: "Job Recommendations", icon: Briefcase, path: "/job-recommendations" },
-  { label: "Profile", icon: User, path: "/profile" },
-  { label: "Pricing", icon: CreditCard, path: "/pricing" },
-  { label: "Settings", icon: Settings, path: "/settings" },
 ];
 
 export default function AppSidebar() {
