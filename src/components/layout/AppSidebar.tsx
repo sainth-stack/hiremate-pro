@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import {
-  LayoutDashboard, Kanban, FileText, ScanSearch, FileBarChart,
+  LayoutDashboard, Kanban,
   Mic, LogOut, Sparkles, ChevronLeft, ChevronRight, Briefcase
 } from "lucide-react";
 import { cn } from "@/lib/utils";
