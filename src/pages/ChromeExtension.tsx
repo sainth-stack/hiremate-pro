@@ -11,11 +11,11 @@ import { Input } from "@/components/ui/input";
 import {
   Sparkles, ShieldCheck, User, CheckCircle, AlertCircle,
   FileText, PenSquare, Star, Users, ChevronDown, ChevronUp,
-  MapPin, Mail, Phone, Linkedin, Github, ExternalLink, RefreshCw, Edit,
+  MapPin, Mail, Phone, Linkedin, Github, RefreshCw, Edit,
   Briefcase, X, Chrome, Copy, Check, Zap, Eye, Download,
   GraduationCap, Code, Globe, Upload, Lock, Unlock, RotateCcw,
   Lightbulb, TrendingUp, Target, Award, Clock, Send, Wand2,
-  MessageSquare, HelpCircle, Hash, Layers, ArrowUpRight
+  MessageSquare, HelpCircle, Hash, Layers, ExternalLink
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
