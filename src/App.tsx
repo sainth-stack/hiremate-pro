@@ -45,6 +45,7 @@ const App = () => (
               <Route path="/job-scan" element={<ATSScanner />} />
               <Route path="/resume-analyzer" element={<ResumeAnalyzer />} />
               <Route path="/interview-practice" element={<InterviewPractice />} />
+              <Route path="/chrome-extension" element={<ChromeExtension />} />
             </Route>
 
             <Route path="*" element={<NotFound />} />
