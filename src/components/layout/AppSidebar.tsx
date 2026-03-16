@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import {
-  LayoutDashboard, Kanban, FileText, ScanSearch, FileBarChart,
+  LayoutDashboard, Kanban,
   Mic, LogOut, Sparkles, ChevronLeft, ChevronRight, Briefcase
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -12,9 +12,6 @@ const navItems = [
   { label: "Dashboard", icon: LayoutDashboard, path: "/" },
   { label: "Applications", icon: Kanban, path: "/application-tracker" },
   { label: "AI Resume Studio", icon: Sparkles, path: "/ai-resume-studio" },
-  { label: "Resume Generator", icon: FileText, path: "/resume-generator" },
-  { label: "ATS Scanner", icon: ScanSearch, path: "/job-scan" },
-  { label: "Resume Analyzer", icon: FileBarChart, path: "/resume-analyzer" },
   { label: "Interview Prep", icon: Mic, path: "/interview-practice" },
 ];
 
