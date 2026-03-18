@@ -272,9 +272,6 @@ export default function ChromeExtension() {
               >
                 {tab.icon}
                 {tab.label}
-                {tab.id === "autofill" && (
-                  <span className="absolute -top-0.5 right-2 w-2 h-2 rounded-full bg-success" />
-                )}
               </button>
             ))}
           </div>
