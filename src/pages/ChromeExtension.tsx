@@ -272,9 +272,6 @@ export default function ChromeExtension() {
               >
                 {tab.icon}
                 {tab.label}
-                {tab.id === "autofill" && (
-                  <span className="absolute -top-0.5 right-2 w-2 h-2 rounded-full bg-success" />
-                )}
               </button>
             ))}
           </div>
@@ -411,15 +408,12 @@ function AutofillTab({
       </div>
 
       {/* Quick Actions */}
-      <div className="grid grid-cols-3 gap-0 divide-x divide-border">
+      <div className="grid grid-cols-2 gap-0 divide-x divide-border">
         <button className="py-2.5 text-[11px] font-semibold text-primary hover:bg-primary/5 transition-colors flex items-center justify-center gap-1">
           <Download className="w-3 h-3" /> Save Job
         </button>
         <button className="py-2.5 text-[11px] font-semibold text-primary hover:bg-primary/5 transition-colors flex items-center justify-center gap-1">
           <Users className="w-3 h-3" /> Referrals
-        </button>
-        <button className="py-2.5 text-[11px] font-semibold text-primary hover:bg-primary/5 transition-colors flex items-center justify-center gap-1">
-          <Eye className="w-3 h-3" /> Preview
         </button>
       </div>
 
