@@ -240,7 +240,7 @@ export default function ChromeExtension() {
               <img src={opsBrainLogo} alt="OpsBrain" className="h-8 w-auto" />
               <div className="flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
-                <p className="text-[10px] text-muted-foreground font-medium">Connected · linkedin.com</p>
+                <p className="text-[10px] text-muted-foreground font-medium">Connected</p>
               </div>
             </div>
             <div className="flex items-center gap-1">
