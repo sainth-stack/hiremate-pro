@@ -395,7 +395,7 @@ function AutofillTab({
             <div className="flex items-center gap-2 pt-2">
               <Checkbox
                 id="cache"
-                className="border-primary-foreground/40 data-[state=checked]:bg-primary-foreground data-[state=checked]:text-primary h-3.5 w-3.5"
+                className="border-border data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground h-4 w-4 rounded-[4px]"
               />
               <label htmlFor="cache" className="text-[11px] opacity-80 cursor-pointer">Use cached answers for faster fills</label>
             </div>
