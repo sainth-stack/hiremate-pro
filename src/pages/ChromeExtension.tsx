@@ -238,12 +238,9 @@ export default function ChromeExtension() {
           <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-card">
             <div className="flex items-center gap-2.5">
               <img src={opsBrainLogo} alt="OpsBrain" className="h-8 w-auto" />
-              <div>
-                <span className="font-bold text-sm text-foreground tracking-tight">OpsBrain</span>
-                <div className="flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
-                  <p className="text-[10px] text-muted-foreground font-medium">Connected · linkedin.com</p>
-                </div>
+              <div className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
+                <p className="text-[10px] text-muted-foreground font-medium">Connected · linkedin.com</p>
               </div>
             </div>
             <div className="flex items-center gap-1">
