@@ -236,9 +236,9 @@ export default function ChromeExtension() {
         <Card className="overflow-hidden border-border shadow-2xl rounded-2xl">
           {/* Extension Header */}
           <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-card">
-            <div className="flex items-center gap-2.5">
+            <div className="flex flex-col items-start gap-1">
               <img src={opsBrainLogo} alt="OpsBrain" className="h-8 w-auto" />
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-1.5 pl-0.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
                 <p className="text-[10px] text-muted-foreground font-medium">Connected</p>
               </div>
@@ -588,11 +588,11 @@ function KeywordsTab({
   return (
     <div className="p-4 space-y-4">
       {/* Resume selector */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-end gap-3">
         <div className="flex-1 space-y-1">
           <label className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider">Active Resume</label>
           <Select defaultValue="main">
-            <SelectTrigger className="h-8 text-xs">
+            <SelectTrigger className="h-9 text-xs">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -602,7 +602,7 @@ function KeywordsTab({
             </SelectContent>
           </Select>
         </div>
-        <Button size="sm" className="h-9 mt-4 text-xs gap-1.5 font-semibold w-full">
+        <Button size="sm" className="h-9 text-xs gap-1.5 font-semibold shrink-0">
           <Target className="w-3.5 h-3.5" /> Tailor Resume
         </Button>
       </div>
