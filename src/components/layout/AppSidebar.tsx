@@ -40,11 +40,9 @@ export default function AppSidebar() {
     >
       {/* Logo */}
       <div className="flex items-center gap-2.5 px-4 h-16 border-b border-sidebar-border shrink-0">
-        <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shrink-0">
-          <Briefcase className="w-4 h-4 text-primary-foreground" />
-        </div>
+        <img src={opsBrainLogo} alt="OpsBrain" className={cn("shrink-0 transition-all", collapsed ? "h-7" : "h-8")} />
         {!collapsed && (
-          <span className="font-bold text-lg text-sidebar-foreground tracking-tight">HireMate</span>
+          <span className="font-bold text-lg text-sidebar-foreground tracking-tight">OpsBrain</span>
         )}
       </div>
 

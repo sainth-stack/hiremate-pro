@@ -236,11 +236,9 @@ export default function ChromeExtension() {
           {/* Extension Header */}
           <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-card">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shadow-sm">
-                <Briefcase className="w-4 h-4 text-primary-foreground" />
-              </div>
+              <img src={opsBrainLogo} alt="OpsBrain" className="h-8 w-auto" />
               <div>
-                <span className="font-bold text-sm text-foreground tracking-tight">HireMate</span>
+                <span className="font-bold text-sm text-foreground tracking-tight">OpsBrain</span>
                 <div className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
                   <p className="text-[10px] text-muted-foreground font-medium">Connected · linkedin.com</p>
