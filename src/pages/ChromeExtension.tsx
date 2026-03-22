@@ -588,11 +588,11 @@ function KeywordsTab({
   return (
     <div className="p-4 space-y-4">
       {/* Resume selector */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-end gap-3">
         <div className="flex-1 space-y-1">
           <label className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider">Active Resume</label>
           <Select defaultValue="main">
-            <SelectTrigger className="h-8 text-xs">
+            <SelectTrigger className="h-9 text-xs">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -602,7 +602,7 @@ function KeywordsTab({
             </SelectContent>
           </Select>
         </div>
-        <Button size="sm" className="h-9 mt-4 text-xs gap-1.5 font-semibold w-full">
+        <Button size="sm" className="h-9 text-xs gap-1.5 font-semibold shrink-0">
           <Target className="w-3.5 h-3.5" /> Tailor Resume
         </Button>
       </div>
