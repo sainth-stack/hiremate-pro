@@ -240,7 +240,7 @@ export default function ChromeExtension() {
               <img src={opsBrainLogo} alt="OpsBrain" className="h-8 w-auto" />
               <div className="flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
-                <p className="text-[10px] text-muted-foreground font-medium">Connected · linkedin.com</p>
+                <p className="text-[10px] text-muted-foreground font-medium">Connected</p>
               </div>
             </div>
             <div className="flex items-center gap-1">
@@ -395,7 +395,7 @@ function AutofillTab({
             <div className="flex items-center gap-2 pt-2">
               <Checkbox
                 id="cache"
-                className="border-primary-foreground/40 data-[state=checked]:bg-primary-foreground data-[state=checked]:text-primary h-3.5 w-3.5"
+                className="border-border data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground h-4 w-4 rounded-[4px]"
               />
               <label htmlFor="cache" className="text-[11px] opacity-80 cursor-pointer">Use cached answers for faster fills</label>
             </div>
@@ -602,8 +602,8 @@ function KeywordsTab({
             </SelectContent>
           </Select>
         </div>
-        <Button size="sm" className="h-8 mt-4 text-xs gap-1 font-semibold">
-          <Target className="w-3 h-3" /> Tailor
+        <Button size="sm" className="h-9 mt-4 text-xs gap-1.5 font-semibold w-full">
+          <Target className="w-3.5 h-3.5" /> Tailor Resume
         </Button>
       </div>
 
