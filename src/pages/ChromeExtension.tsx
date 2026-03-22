@@ -236,12 +236,8 @@ export default function ChromeExtension() {
         <Card className="overflow-hidden border-border shadow-2xl rounded-2xl">
           {/* Extension Header */}
           <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-card">
-            <div className="flex flex-col items-start gap-1">
+            <div className="flex items-center">
               <img src={opsBrainLogo} alt="OpsBrain" className="h-8 w-auto" />
-              <div className="flex items-center gap-1.5 pl-0.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
-                <p className="text-[10px] text-muted-foreground font-medium">Connected</p>
-              </div>
             </div>
             <div className="flex items-center gap-1">
               <button className="w-7 h-7 rounded-lg hover:bg-muted flex items-center justify-center text-muted-foreground transition-colors">
