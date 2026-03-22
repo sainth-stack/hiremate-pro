@@ -2,11 +2,12 @@ import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import {
   LayoutDashboard, Kanban,
-  Mic, LogOut, Sparkles, Menu, X, Briefcase, Chrome
+  Mic, LogOut, Sparkles, Menu, X, Chrome
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import opsBrainLogo from "@/assets/opsbrain-logo.png";
 
 const navItems = [
   { label: "Dashboard", icon: LayoutDashboard, path: "/" },
@@ -25,10 +26,8 @@ export default function MobileNav() {
     <div className="md:hidden">
       <div className="flex items-center justify-between px-4 h-14 border-b border-border bg-card sticky top-0 z-50">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-primary flex items-center justify-center">
-            <Briefcase className="w-3.5 h-3.5 text-primary-foreground" />
-          </div>
-          <span className="font-bold text-base">HireMate</span>
+          <img src={opsBrainLogo} alt="OpsBrain" className="h-7 w-auto" />
+          <span className="font-bold text-base">OpsBrain</span>
         </div>
         <Button variant="ghost" size="icon" onClick={() => setOpen(!open)}>
           {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
