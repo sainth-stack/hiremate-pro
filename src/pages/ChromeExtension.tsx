@@ -227,7 +227,7 @@ export default function ChromeExtension() {
             <Chrome className="w-3.5 h-3.5" />
             Chrome Extension Preview
           </div>
-          <h1 className="text-xl font-bold text-foreground">HireMate Assistant</h1>
+          <h1 className="text-xl font-bold text-foreground">OpsBrain Assistant</h1>
           <p className="text-sm text-muted-foreground">Preview how the extension works on job applications</p>
         </div>
 
