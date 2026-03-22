@@ -602,8 +602,8 @@ function KeywordsTab({
             </SelectContent>
           </Select>
         </div>
-        <Button size="sm" className="h-8 mt-4 text-xs gap-1 font-semibold">
-          <Target className="w-3 h-3" /> Tailor
+        <Button size="sm" className="h-9 mt-4 text-xs gap-1.5 font-semibold w-full">
+          <Target className="w-3.5 h-3.5" /> Tailor Resume
         </Button>
       </div>
 
