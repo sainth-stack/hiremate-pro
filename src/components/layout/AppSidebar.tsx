@@ -2,11 +2,12 @@ import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import {
   LayoutDashboard, Kanban,
-  Mic, LogOut, Sparkles, ChevronLeft, ChevronRight, Briefcase, Chrome
+  Mic, LogOut, Sparkles, ChevronLeft, ChevronRight, Chrome
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import opsBrainLogo from "@/assets/opsbrain-logo.png";
 
 const mainNav = [
   { label: "Dashboard", icon: LayoutDashboard, path: "/" },
